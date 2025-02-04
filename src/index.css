@@ -3,6 +3,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #ECEEFF;
   --color-slate-gray: #6D6D6D;
@@ -10,13 +12,17 @@
   --color-pale-blue: #F5F6FF;
   --color-white-400: rgba(255, 255, 255, 0.80);
 
+  --color-dark-primary: #282828;
+  --color-slate-gray-light: #a9a9a9;
+
+
   --background-image-hero: url('assets/images/collection-background.svg');
   --background-image-card: url('assets/images/thumbnail-background.svg');
 
   --font-montserrat: 'Montserrat', 'sans-serif';
   --font-palanquin: 'Palanquin', 'sans-serif';
 
-  /* --bg-hero: url('assets/images/collection-background.svg'); */
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
 
   --breakpoint-wide: 1440px;
 }

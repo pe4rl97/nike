@@ -18,7 +18,7 @@ const Nav:React.FC = () => {
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href}
-                                className='font-montserrat leading-normal text-lg text-slate-gray'
+                                className='font-montserrat leading-normal text-lg text-slate-gray dark:text-slate-gray-light'
                             >
                                 {item.label}
                             </a>

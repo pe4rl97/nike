@@ -8,9 +8,10 @@ import CustomerReviews from './sections/CustomerReviews';
 import Subscribe from './sections/Subscribe';
 import Footer from './sections/Footer';
 import Nav from './components/Nav';
+import ThemeToggle from './components/ThemeToggle';
 
 const App: React.FC = () => (
-    <main className='relative'>
+    <main className='relative dark:bg-dark-primary'>
         <Nav/>
         <section className='xl:padding-l wide:padding-r padding-b'>
             <Hero/>
@@ -36,6 +37,9 @@ const App: React.FC = () => (
         <section className='bg-black padding-x padding-y pb-8'>
             <Footer/>
         </section>
+
+        <ThemeToggle/>
+
     </main>
 );
 
